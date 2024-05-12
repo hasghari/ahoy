@@ -47,5 +47,7 @@ module Ahoy
       end
       render json: {}
     end
+
+    ActiveSupport.run_load_hooks(:ahoy_events_controller, self)
   end
 end
